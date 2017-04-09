@@ -6,9 +6,6 @@ import static java.lang.Math.cos;
 import static java.lang.Math.sqrt;
 import static java.lang.Math.toRadians;
 
-/**
- * Created by chris91 on 04/04/2017.
- */
 
 public class Position {
     private double latitude;
@@ -59,21 +56,19 @@ public class Position {
         double fMean;
         double radOfEarth = 6371009.0;
         double Distance;
-        //converting latitude and logitude from degrees to radians
+
+        //converting latitude and longitude from degrees to radians
         // f1 and l1 are the latitude and longitude of point of interest
         // f2 and l2 are the latitude and longitude of current position
-
         f1 = toRadians(pos.getLatitude());
         l1 = toRadians(pos.getLongitude());
-
         f2 = toRadians(getLatitude());
         l2 = toRadians(getLongitude());
 
+        //calculate the Distance between current position and point of interest
         squaredDf = (f1 - f2)*(f1 - f2);
         squaredDl = (l1 - l2)*(l1 - l2);
-
         fMean = (f1 + f2)/2;
-
         Distance = radOfEarth*(sqrt(squaredDf + (cos(fMean)*cos(fMean)*squaredDl)));
         Log.d("Position", "Distance: " + Distance);
 

@@ -1,8 +1,5 @@
 package com.bignerdranch.android.mucproject;
 
-/**
- * Created by chris91 on 05/04/2017.
- */
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,7 +8,6 @@ import android.graphics.PointF;
 import android.util.AttributeSet;
 
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
-//import com.bignerdranch.android.mucproject.R;
 
 /**
  * Extends great ImageView library by Dave Morrissey. See more:

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MUCProject</string>
+    <string name="labs_404_405">Entrance to 404/405</string>
+    <string name="lab_403">Entrance to 403</string>
+    <string name="main_entrance_labs">Main Entrance to Labs</string>
+    <string name="stairs">Stairs</string>
+    <string name="lifts">Lifts A/B</string>
 </resources>
